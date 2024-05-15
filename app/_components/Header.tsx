@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
+
 
 function Header() {
   return (
@@ -68,7 +70,8 @@ function Header() {
                 className="block rounded-md  px-5 py-2.5 text-sm font-medium 
             text-white transition "
               >
-                {"Login"}
+                <LoginLink>{"Login"}</LoginLink>
+                
               </div>
 
               <div
@@ -78,7 +81,8 @@ function Header() {
               hover:text-slate-800 sm:block"
               >
                 {" "}
-                {"Register"}
+                <RegisterLink>{"Register"}</RegisterLink>
+                
               </div>
             </div>
 
