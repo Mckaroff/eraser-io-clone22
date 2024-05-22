@@ -3,7 +3,7 @@ import { Link, Save } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
-function WorkspaceHeader({onSave}:any) {
+function WorkspaceHeader({onSave,fileName}:any) {
   return (
     <div className='p-3 border-b flex justify-between items-center'>
       <div className='flex gap-2 items-center'>
@@ -11,7 +11,7 @@ function WorkspaceHeader({onSave}:any) {
           alt='logo'
           height={40}
           width={40} />
-        <h2>File Name</h2>
+        <h2>{fileName}</h2>
       </div>
       <div className='flex items-center gap-4'>
         <Button className='h-8 text-[12px]
